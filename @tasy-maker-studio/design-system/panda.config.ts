@@ -8,12 +8,7 @@ export default defineConfig({
   preflight: true,
 
   // Where to look for your css declarations
-  include: [
-    "node_modules/@tasty-maker-studio/design-system/src/**/*.{ts,tsx,js,jsx}",
-    // you could also very well include the buildinfo.json file instead of the source files
-    // "node_modules/@tasty-maker-studio/design-system/dist/panda.buildinfo.json",
-    "./src/**/*.{ts,tsx,js,jsx}",
-  ],
+  include: ["./src/**/*.{ts,tsx,js,jsx}"],
   presets: [pandaPreset, tmsPandaPreset],
 
   exclude: [],

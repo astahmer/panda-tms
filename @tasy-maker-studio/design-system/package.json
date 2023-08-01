@@ -103,7 +103,7 @@
     "dev": "storybook dev  -p 6006",
     "dev:rebuild": "pnpm prepare && pnpm build && pnpm dev ",
     "watch": "chokidar 'src/**/*' -e 'add' -c 'pnpm run build:dev'  --throttle 2000",
-    "build": "tsup --format cjs,esm --dts  --external @tasty-maker-studio/styled-system   && pnpm ship",
+    "build": "tsup src/index.ts --format cjs,esm --dts  --external @tasty-maker-studio/styled-system   && pnpm ship",
     "build:dev": "NODE_ENV=development  tsup --format cjs,esm --clean --dts --external--external @tasty-maker-studio/styled-system   && pnpm ship",
     "clean": "rm -rf node_modules && pnpm clear:build && pnpm clean:build:dev",
     "test": "pnpm  test --passWithNoTests",
