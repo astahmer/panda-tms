@@ -1,0 +1,36 @@
+{
+  "name": "panda-next-poc",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "panda-prep": "panda codegen",
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@ark-ui/react": "^0.9.0",
+    "@tasty-maker-studio/design-system": "^1.0.11",
+    "@pandacss/preset-panda": "^0.9.0",
+    "@pandacss/dev": "^0.9.0",
+    "next": "13.4.8",
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
+    "react-icons": "^4.10.1"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.22.6",
+    "@types/node": "20.3.3",
+    "@types/react": "18.2.14",
+    "@types/react-dom": "18.2.6",
+    "babel-loader": "9.1.2",
+    "css-loader": "^6.8.1",
+    "eslint": "8.44.0",
+    "eslint-config-next": "13.4.8",
+    "postcss-flexbugs-fixes": "^5.0.2",
+    "postcss-preset-env": "^9.0.0",
+    "ts-loader": "^9.4.4",
+    "typescript": "5.1.6"
+  }
+}
